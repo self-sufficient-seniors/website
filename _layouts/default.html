@@ -2,7 +2,10 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Self-Sufficient Seniors</title>
+  <title>{% if page.title %}{{page.title}} · {% endif %}Self-Sufficient Seniors · Ottawa, Canada</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
 </head>
 <body>
 
