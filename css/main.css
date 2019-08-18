@@ -20,13 +20,14 @@ a,
 
 .btn-nav {
   text-decoration: none;
-  border-bottom: solid 2px #dfc9d8;
+  border-bottom: solid 2px rgb(223, 201, 216, 0.25);
 }
 
 .btn-nav:hover,
 .btn-nav:focus {
   border-bottom: solid 2px #b3025b;
   color: #b3025b;
+  background-color: rgb(223, 201, 216, 0.25);
 }
 
 .nav {
@@ -99,6 +100,27 @@ nav [type="checkbox"] + label::before {
 .current {
   border-bottom: solid 2px #b3025b;
   color: #b3025b;
+  background-color: rgb(223, 201, 216, 0.25);
+}
+
+.xs-gutter-m-no {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .btn-nav:hover,
+  .btn-nav:focus {
+    background-color: rgb(223, 201, 216, 0.25);
+  }
+
+  .xs-gutter-m-no {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  }
 }
 
 @media only screen and (min-width: 60em) {
