@@ -13,12 +13,15 @@ select:focus {
   outline-offset: 0;
 }
 
-a,
-.btn-nav {
+a {
   text-decoration: none;
 }
 
 .btn-nav {
+  display: block;
+  font-weight: 700;
+  color: #650038;
+  text-transform: uppercase;
   text-decoration: none;
   border-bottom: solid 2px rgb(223, 201, 216, 0.25);
 }
@@ -37,13 +40,6 @@ a,
   width: 100%;
   right: 0;
   top: 100%;
-}
-
-.btn-nav {
-  display: block;
-  font-weight: 700;
-  color: #650038;
-  text-transform: uppercase;
 }
 
 .nav-check:checked ~ .nav {
@@ -108,25 +104,27 @@ nav [type="checkbox"] + label::before {
   padding-right: 1.3rem;
 }
 
-@media only screen and (min-width: 38em) {
+.nav-header {
+  background-color: #fff;
+}
 
-  .btn-nav:hover,
-  .btn-nav:focus {
-    background-color: rgb(223, 201, 216, 0.25);
-  }
+@media only screen and (min-width: 38em) {
 
   .xs-gutter-m-no {
     padding-left: 0;
     padding-right: 0;
   }
 
-  }
 }
 
 @media only screen and (min-width: 60em) {
 
   nav [type="checkbox"] + label {
     display: none;
+  }
+
+  .nav-header {
+    background-color: #b3025b;
   }
 
   .nav {
@@ -151,29 +149,30 @@ nav [type="checkbox"] + label::before {
   .btn-nav {
     font-weight: 600;
     color: #fff;
-    border-bottom: none;
+    border-bottom-color: #b3025b;
+    background-color: #b3025b;
   }
 
-  .l-nav-border {
-    display: inline-block;
-    border-bottom: solid 3px #b3025b;
+  .btn-nav:hover,
+  .btn-nav:focus {
+    border-bottom-color: #b3025b;
+    color: #fff;
+    background-color: #b3025b;
   }
 
   .btn-nav:hover .l-nav-border,
   .btn-nav:focus .l-nav-border {
     display: inline-block;
-    border-bottom: solid 3px #fff;
+    border-bottom-color: #fff;
+  }
+
+  .l-nav-border {
+    border-bottom: solid 3px #b3025b;
   }
 
   .current .l-nav-border {
     display: inline-block;
-    border-bottom: solid 3px #fff;
-  }
-
-
-  .btn-nav:hover {
-    border-bottom: none;
-    color: #fff;
+    border-bottom-color: #fff;
   }
 
 }
@@ -198,9 +197,7 @@ nav [type="checkbox"] + label::before {
 }
 
 
-.nav-header {
-  background-color: #fff;
-}
+
 
 html {
   font-family: Assistant, sans-serif;
