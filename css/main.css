@@ -148,9 +148,10 @@ nav [type="checkbox"] + label::before {
     height: 55px;
   }
 
-  .nav-list a {
+  .btn-nav {
     font-weight: 600;
     color: #fff;
+    border-bottom: none;
   }
 
   .l-nav-border {
@@ -169,10 +170,6 @@ nav [type="checkbox"] + label::before {
     border-bottom: solid 3px #fff;
   }
 
-  .btn-nav {
-    border-bottom: none;
-    color: #fff;
-  }
 
   .btn-nav:hover {
     border-bottom: none;
