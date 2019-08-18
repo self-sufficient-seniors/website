@@ -1,0 +1,18 @@
+html {
+  font-family: Assistant, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.current {
+  color: red;
+}
+
+.masthead {
+  background-color: #b3025b;
+}
+
+.header-logo {
+  width: 180px;
+  height: 40px;
+}
