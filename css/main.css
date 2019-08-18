@@ -180,7 +180,7 @@ nav [type="checkbox"] + label::before {
 
 
 .nav-header {
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 html {
