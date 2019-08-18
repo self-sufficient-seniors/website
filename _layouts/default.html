@@ -6,23 +6,43 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-  <strong>Self-Suficient Seniors</strong>
+  <div class="masthead gutter-1-2 pad-t-1-2 pad-b-1-2">
+    <a class="nav-logo" aria-label="Click to go back to home page" href="{{site.baseurl}}/">
+      <i class="icon header-logo">
+        <img class="img-flex" src="{{site.baseurl}}/images/icon-logo.svg" alt="Logo of Self-Sufficient seniors inc.">
+      </i>
+    </a>
+  </div>
+
   <nav>
     <ul>
-      <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-      <li><a href="{{site.baseurl}}/services/index.html">Services</a></li>
-      <li><a href="{{site.baseurl}}/about-us.html">About us</a></li>
-      <li><a href="{{site.baseurl}}/contact.html">Contact</a></li>
-      <li><a href="{{site.baseurl}}/testimonials.html">Testimonials</a></li>
+      <li><a href="{{site.baseurl}}/index.html" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+      <li><a href="{{site.baseurl}}/services/index.html" class="{% if page.url contains '/services/' %}current{% endif %}">Services</a></li>
+      <li><a href="{{site.baseurl}}/about-us.html" class="{% if page.url contains '/about-us' %}current{% endif %}">About us</a></li>
+      <li><a href="{{site.baseurl}}/contact.html" class="{% if page.url contains '/contact' %}current{% endif %}">Contact</a></li>
+      <li><a href="{{site.baseurl}}/testimonials.html" class="{% if page.url contains '/testimonials' %}current{% endif %}">Testimonials</a></li>
     </ul>
   </nav>
 </header>
 
 {{content}}
 
+<footer>
+  <strong>Self-Suficient Seniors</strong>
+  <nav>
+    <ul>
+      <li><a href="{{site.baseurl}}/index.html" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+      <li><a href="{{site.baseurl}}/services/index.html" class="{% if page.url contains '/services/' %}current{% endif %}">Services</a></li>
+      <li><a href="{{site.baseurl}}/about-us.html" class="{% if page.url contains '/about-us' %}current{% endif %}">About us</a></li>
+      <li><a href="{{site.baseurl}}/contact.html" class="{% if page.url contains '/contact' %}current{% endif %}">Contact</a></li>
+      <li><a href="{{site.baseurl}}/testimonials.html" class="{% if page.url contains '/testimonials' %}current{% endif %}">Testimonials</a></li>
+    </ul>
+  </nav>
+</footer>
 </body>
 </html>
