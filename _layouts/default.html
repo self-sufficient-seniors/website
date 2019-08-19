@@ -6,40 +6,63 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
-  <header>
+<header class="masthead-wrapper push-2">
 
-    <section class="nav-bar island-1-2 push">
-      <div class="logo">
-        <a href="{{site.baseurl}}/" aria-label="Click to go back to home page">
-          <i class="icon icon-logo"><img class="img-flex" src="{{site.baseurl}}/images/icon-logo.svg" alt="Logo of Self-Sufficient seniors inc."></i>
-        </a>
+  <div class="grid grid-middle masthead">
+    <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-2">
+      <div class="pad-t-1-2 pad-b-1-2">
+        <div class="gutter">
+          <a class="nav-logo" aria-label="Click to go back to home page" href="{{site.baseurl}}/">
+            <i class="icon header-logo">
+              <img class="img-flex" src="{{site.baseurl}}/images/icon-logo.svg" alt="Logo of Self-Sufficient seniors inc.">
+            </i>
+          </a>
+        </div>
       </div>
-      <nav class="">
+    </div>
+    <div class="unit xs-1 s-1 m-1 l-2-3 xl-1-2">
+      <nav>
         <input type="checkbox" class="nav-check" id="nav-check">
         <label class="nav-label" for="nav-check">
           <img class="nav-open img-flex" src="{{site.baseurl}}/images/icon-menu.svg" alt="open navigation">
           <img class="nav-close img-flex" src="{{site.baseurl}}/images/icon-x-menu.svg" alt="close navigation">
         </label>
-        <div class="nav pad-t-1-2 pad-b-1-2 text-center">
-          <ul class="nav-list list-group kilo grid">
-            <li class="unit xs-1 s-1 m-1-2 l-1-5"><a href="{{site.baseurl}}/index.html" class="{% if page.url == '/' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2">Home</a></li>
-            <li class="unit xs-1 s-1 m-1-2 l-1-5"><a href="{{site.baseurl}}/services/index.html" class="{% if page.url contains '/services/' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2">Services</a></li>
-            <li class="unit xs-1 s-1 m-1-2 l-1-5"><a href="{{site.baseurl}}/about-us.html" class="{% if page.url contains '/about-us' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2">About us</a></li>
-            <li class="unit xs-1 s-1 m-1-2 l-1-5"><a href="{{site.baseurl}}/contact.html" class="{% if page.url contains '/contact' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2">Contact</a></li>
-            <li class="unit xs-1 s-1 m-1-2 l-1-5"><a href="{{site.baseurl}}/testimonials.html" class="{% if page.url contains '/testimonials' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2">Testimonials</a></li>
+        <div class="nav-header nav">
+          <ul class="grid list-group nav-list milli nav-text">
+            <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/index.html" class="{% if page.url == '/' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">Home</span></a></li>
+            <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/services/index.html" class="{% if page.url contains '/services/' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">Services</span></a></li>
+            <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/about-us.html" class="{% if page.url contains '/about-us' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">About us</span></a></li>
+            <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/contact.html" class="{% if page.url contains '/contact' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">Contact</span></a></li>
+            <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/testimonials.html" class="{% if page.url contains '/testimonials' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">Testimonials</span></a></li>
           </ul>
         </div>
       </nav>
-    </section>
+    </div>
+  </div>
 
-
-
-  </header>
-
+</header>
 
 
 

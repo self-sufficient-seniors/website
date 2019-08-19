@@ -9,8 +9,8 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  outline: 2px solid #00b9b7;
-  outline-offset: 0;
+  outline: 3px solid #650038;
+  outline-offset: 2px;
 }
 
 a {
@@ -24,6 +24,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: solid 2px rgb(223, 201, 216, 0.25);
+  transition: background-color 0.2s ease-out;
 }
 
 .btn-nav:hover,
@@ -33,13 +34,17 @@ a {
   background-color: rgb(223, 201, 216, 0.25);
 }
 
-.nav {
+/* .nav {
   background-color: #00b9b7;
   display: none;
   position: absolute;
   width: 100%;
   right: 0;
   top: 100%;
+} */
+
+.nav {
+  display: none;
 }
 
 .nav-check:checked ~ .nav {
@@ -55,8 +60,8 @@ nav [type="checkbox"] + label::before {
   cursor: pointer;
   width: 40px;
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 1.3rem;
+  top: 2.2rem;
   transform: translateY(-50%);
 }
 
@@ -115,25 +120,25 @@ nav [type="checkbox"] + label::before {
     padding-right: 0;
   }
 
-}
-
-@media only screen and (min-width: 60em) {
-
   nav [type="checkbox"] + label {
     display: none;
   }
 
-  .nav-header {
-    background-color: #b3025b;
-  }
-
   .nav {
     display: block;
-    width: 50%;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: inherit;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .xs-gutter-m-no {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .nav-header {
+    background-color: #b3025b;
   }
 
   .nav-bar {
@@ -151,6 +156,7 @@ nav [type="checkbox"] + label::before {
     color: #fff;
     border-bottom-color: #b3025b;
     background-color: #b3025b;
+    transition: none;
   }
 
   .btn-nav:hover,
@@ -175,6 +181,10 @@ nav [type="checkbox"] + label::before {
     border-bottom-color: #fff;
   }
 
+  .nav {
+    padding-right: 1.5rem;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -185,7 +195,6 @@ nav [type="checkbox"] + label::before {
 
 }
 
-
 /* ------------------------------------end old navigation---------------------------------------- */
 
 /* ------------------------------------new navigation---------------------------------------- */
@@ -195,9 +204,6 @@ nav [type="checkbox"] + label::before {
   width: 100%;
   background-color: blue;
 }
-
-
-
 
 html {
   font-family: Assistant, sans-serif;
