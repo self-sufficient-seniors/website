@@ -212,8 +212,17 @@ html {
 }
 
 .header-logo {
-  width: 202px;
-  height: 49px;
+  width: 172px;
+  height: 42px;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .header-logo {
+    width: 202px;
+    height: 49px;
+  }
+
 }
 
 .masthead-wrapper {
@@ -245,4 +254,124 @@ html {
     margin: auto;
   }
 
+}
+
+/* ------------------------------------footer contact-bar---------------------------------------- */
+
+.footercontact-bar {
+  background-color: #b3025b;
+  color: #fff;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.text-ctr-lft-ctr {
+  text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .text-ctr-lft-ctr {
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .text-ctr-lft-ctr {
+    text-align: center;
+  }
+
+}
+
+/* ------------------------------------buttons---------------------------------------- */
+
+.btn-main {
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: .35em 1.75em;
+  font-weight: 700;
+  border-width: 2px;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #b3025b;
+  border-color: #fff;
+  transition: background-color 0.2s ease-out;
+  letter-spacing: 0.02em;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  background-color: #b3025b;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-footer {
+  background-color: #b3025b;
+  color: #fff;
+  border-color: #b3025b;
+  padding: .2em 1.75em .35em 1.35em;
+  transition: background-color 0.2s ease-out;
+}
+
+.btn-footer:hover,
+.btn-footer:focus {
+  background-color: #650038;
+  color: #fff;
+  border-color: #fff;
+}
+
+.white {
+  color: #fff;
+}
+
+.tracking {
+  letter-spacing: 0.05em;
+}
+
+/* ------------------------------------footer---------------------------------------- */
+
+.footer {
+  background-color: #650038;
+  color: #fff;
+}
+
+.gutter-tagline {
+  padding-left: .65rem;
+  padding-right: .65rem;
+  line-height: 1.15rem;
+}
+
+.footer-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.
+@media only screen and (min-width: 60em) {
+
+  .gutter-tagline {
+    padding-left: .45rem;
+    padding-right: .45rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .gutter-tagline {
+    padding-left: .3rem;
+    padding-right: .3rem;
+  }
+
+}
+
+.align-b {
+  vertical-align: middle;
 }
