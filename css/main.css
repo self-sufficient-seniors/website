@@ -348,6 +348,9 @@ html {
 }
 
 /* ------------------------------------footer---------------------------------------- */
+.footer-nav-text {
+  text-align: center;
+}
 
 .btn-nav-footer {
   display: block;
@@ -401,13 +404,40 @@ html {
   height: 25px;
 }
 
-@media only screen and (min-width: 60em) {
 
-  .gutter-tagline {
-    padding-left: .45rem;
-    padding-right: .45rem;
+.text-center-left,
+.text-center-right,
+.text-center-l-left {
+  text-align: center;
+}
+
+@media only screen and (min-width:38em) {
+
+  .text-center-left {
+    text-align: left;
   }
 
+  .text-center-right {
+    text-align: right;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .text-center-l-left {
+    text-align: left;
+    padding-left: 6.1rem;
+  }
+
+  .gutter-tagline {
+    padding-left: 2.68rem;
+  }
+
+  .footer-nav-text {
+    text-align: left;
+    padding-left: 5.1rem;
+  }
 }
 
 @media only screen and (min-width: 90em) {
