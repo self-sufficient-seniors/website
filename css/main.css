@@ -24,12 +24,14 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: solid 2px rgb(223, 201, 216, 0.25);
+  background-color: inherit;
   transition: background-color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .btn-nav:hover,
 .btn-nav:focus {
-  border-bottom: solid 2px #b3025b;
+  border-bottom-color: #b3025b;
   color: #b3025b;
   background-color: rgb(223, 201, 216, 0.25);
 }
@@ -61,7 +63,7 @@ nav [type="checkbox"] + label::before {
   width: 40px;
   position: absolute;
   right: 1.3rem;
-  top: 2.2rem;
+  top: 2rem;
   transform: translateY(-50%);
 }
 
@@ -166,18 +168,17 @@ nav [type="checkbox"] + label::before {
     background-color: #b3025b;
   }
 
-  .btn-nav:hover .l-nav-border,
-  .btn-nav:focus .l-nav-border {
-    display: inline-block;
-    border-bottom-color: #fff;
-  }
-
   .l-nav-border {
+    display: inline-block;
     border-bottom: solid 3px #b3025b;
   }
 
+  .btn-nav:hover .l-nav-border,
+  .btn-nav:focus .l-nav-border {
+    border-bottom-color: #fff;
+  }
+
   .current .l-nav-border {
-    display: inline-block;
     border-bottom-color: #fff;
   }
 
@@ -271,6 +272,10 @@ html {
   text-align: center;
 }
 
+.text-ctr-lft {
+  text-align: center;
+}
+
 @media only screen and (min-width: 38em) {
 
   .text-ctr-lft-ctr {
@@ -285,14 +290,21 @@ html {
     text-align: center;
   }
 
+  .text-ctr-lft {
+    text-align: left;
+  }
+
 }
 
 /* ------------------------------------buttons---------------------------------------- */
 
-.btn-main {
+.caps {
   text-transform: uppercase;
+}
+
+.btn-main {
   border-radius: 25px;
-  padding: .35em 1.75em;
+  padding: .35em 1.1em;
   font-weight: 700;
   border-width: 2px;
 }
@@ -316,7 +328,7 @@ html {
   background-color: #b3025b;
   color: #fff;
   border-color: #b3025b;
-  padding: .2em 1.75em .35em 1.35em;
+  padding: .2em 1.1em .35em 1em;
   transition: background-color 0.2s ease-out;
 }
 
@@ -337,6 +349,32 @@ html {
 
 /* ------------------------------------footer---------------------------------------- */
 
+.btn-nav-footer {
+  display: block;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.l-nav-border-footer {
+  display: inline-block;
+  border-bottom: solid 2px #650038;
+}
+
+.btn-nav-footer:hover .l-nav-border-footer,
+.btn-nav-footer:focus .l-nav-border-footer {
+  border-bottom-color: #fff;
+}
+
+.current-footer .l-nav-border-footer {
+  border-bottom-color: #fff;
+}
+
+.line-tight {
+  line-height: 1.15rem;
+}
+
 .footer {
   background-color: #650038;
   color: #fff;
@@ -348,12 +386,21 @@ html {
   line-height: 1.15rem;
 }
 
-.footer-icon {
-  width: 22px;
-  height: 22px;
+.footer-icon-phone {
+  width: 20px;
+  height: 20px;
 }
 
-.
+.footer-icon-email {
+  width: 20px;
+  height: 15px;
+}
+
+.footer-icon-location {
+  width: 20px;
+  height: 25px;
+}
+
 @media only screen and (min-width: 60em) {
 
   .gutter-tagline {
