@@ -314,7 +314,7 @@ html {
 
 .btn-main {
   border-radius: 25px;
-  padding: .35em 1.1em .25em 1.1em;
+  padding: .35em 1.1em .3em 1.1em;
   font-weight: 700;
   border-width: 2px;
 }
@@ -486,7 +486,6 @@ html {
   width: 100%;
 }
 
-
 .card-service:hover,
 .card-service:focus {
   border-bottom-color: #b3025b;
@@ -525,7 +524,7 @@ html {
 }
 
 .raspberry {
-  color: #b3025b
+  color: #b3025b;
 }
 
 .quote-main {
@@ -546,4 +545,41 @@ html {
   background-color: #fff;
   color: #83003f;
   border-color: #83003f;
+}
+
+/* ------------------------------------Banner---------------------------------------- */
+
+.banner-overtop {
+  background-color: rgba(131, 0, 63, .7);
+}
+
+.btn-banner {
+  background-color: #fff;
+  color: #b3025b;
+  border-color: #fff;
+  transition: background-color 0.2s ease-out;
+  letter-spacing: 0.02em;
+}
+
+.btn-banner:hover,
+.btn-banner:focus {
+  background-color: inherit;
+  color: #fff;
+  border-color: inherit;
+}
+
+/* ------------------------------------Services pages---------------------------------------- */
+
+.service-icon {
+  width: 4.2em;
+  height: 4.2em;
+}
+
+.bullet {
+  display: inline-block;
+  background-color: #83003f;
+  width: 6px;
+  height: 6px;
+  border-radius: 20px;
+  margin-right: .5em;
 }
