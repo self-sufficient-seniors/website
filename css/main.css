@@ -358,7 +358,8 @@ html {
 }
 
 /* ------------------------------------footer---------------------------------------- */
-.footer-nav-text {
+.footer-nav-text,
+.footer-nav-text-m-right {
   text-align: center;
 }
 
@@ -431,22 +432,27 @@ html {
     text-align: right;
   }
 
+  .footer-nav-text-m-right {
+    text-align: right;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
   .text-center-l-left {
     text-align: left;
-    padding-left: 6.1rem;
+    padding-left: 6rem;
   }
 
   .gutter-tagline {
     padding-left: 2.68rem;
   }
 
-  .footer-nav-text {
+  .footer-nav-text,
+  .footer-nav-text-m-right {
     text-align: left;
-    padding-left: 5.1rem;
+    padding-left: 4.5rem;
   }
 }
 
