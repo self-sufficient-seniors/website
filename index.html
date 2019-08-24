@@ -7,14 +7,38 @@ description: Self-Sufficient Seniors is a healthcare company..... to be continue
 
 <div class="" role="banner">
   <h1>Prolonging<br>independence,<br>one visit at a time</h1>
-  <a href="#">Contact us</a>
+  <div class="island-1-2 text-ctr-lft-ctr">
+    <a class="btn btn-main btn-white milli caps" href="{{site.baseurl}}/contact.html" aria-label="Click to go to contact page">Contact us</a>
+  </div>
 </div>
 
 <main role="main" id="main" tabindex="0">
-  <div class="wrapper">
+  <div class="">
+    <h2>Who we are</h2>
+    <p>Self-Sufficient seniors is a healthcare company that offers a new innovative approach to senior care and provides the corner stone for a continued independent lifestyle.</p>
+    <h2>What we do</h2>
+    <p>We provide services to seniors that help them develop or maintain the skills they need to stay independent.</p>
+    <section class="card-section pad-t pad-b-2">
+      <div class="wrapper">
+        <h2>Our services and programs</h2>
+        <p>Our personalized programs can include a combination of cognitive training, physical exercise, health care advocacy and home safety assessments.</p>
+        {% include services-cards.html %}
+      </div>
+    </section>
+    <section class="gutter pad-t-2 pad-b-2">
+      <div class="max-length">
+        <div class="">
+          <i class="icon quote-main push-1-4 inline-block">
+            <img class="img-flex" src="{{site.baseurl}}/images/icon-quote.svg" alt="Open quotation mark icon">
+          </i>
+        </div>
+        <p class="giga bold burgundy push-1-2">Karen has helped me in my physical recovery and supported me in my emotional recovery from my stroke.”</p>
+        <p class="text-right burgundy push-1-2 gutter-1-4">— Dr. Keith M</p>
+        <div class="text-left">
+          <a class="btn btn-main btn-quote milli caps" href="{{site.baseurl}}/testimonials.html" aria-label="Click to read more testimonials">Read more testimonials</a>
+        </div>
+      </div>
 
-    <section class="width-card-sm">
-      {% include services-cards.html %}
     </section>
 
   </div>

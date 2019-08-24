@@ -3,7 +3,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #b3025b;
+  color: #83003f;
 }
 .tight {
   line-height: 1.25;
@@ -33,7 +33,7 @@ a {
   color: #650038;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: solid 2px rgb(223, 201, 216, 0.25);
+  border-bottom: solid 2px #f5eff3;
   background-color: inherit;
   transition: background-color 0.2s ease-out;
   transition: color 0.2s ease-out;
@@ -43,7 +43,7 @@ a {
 .btn-nav:focus {
   border-bottom-color: #b3025b;
   color: #b3025b;
-  background-color: rgb(223, 201, 216, 0.25);
+  background-color: #f5eff3;
 }
 
 /* .nav {
@@ -113,7 +113,7 @@ nav [type="checkbox"] + label::before {
 .current {
   border-bottom: solid 2px #b3025b;
   color: #b3025b;
-  background-color: rgb(223, 201, 216, 0.25);
+  background-color: #f5eff3;
 }
 
 .xs-gutter-m-no {
@@ -314,7 +314,7 @@ html {
 
 .btn-main {
   border-radius: 25px;
-  padding: .35em 1.1em;
+  padding: .35em 1.1em .25em 1.1em;
   font-weight: 700;
   border-width: 2px;
 }
@@ -472,18 +472,20 @@ html {
 
 .card-service {
   display: inline-block;
-  background-color: rgb(223, 201, 216, 0.2);
-  border-bottom: solid 10px rgb(223, 201, 216, 0);
-  border-right: solid 5px rgb(223, 201, 216, 0);
-  border-left: solid 5px rgb(223, 201, 216, 0);
+  background-color: #f5eff3;
+  border-bottom: solid 10px #f5eff3;
+  border-right: solid 5px #f5eff3;
+  border-left: solid 5px #f5eff3;
   outline: solid 1px rgb(223, 201, 216);
   width: 100%;
 }
 
 
-.card-service:hover {
+.card-service:hover,
+.card-service:focus {
   border-bottom-color: #b3025b;
   border-right-color: rgb(223, 201, 216);
+  border-left-color: #fff;
   outline: solid 1px rgb(223, 201, 216);
   background-color: #fff;
 }
@@ -504,4 +506,38 @@ html {
     width: 25%;
   }
 
+}
+
+.card-section {
+  background-color: #f5eff3;
+}
+
+/* ------------------------------------home page---------------------------------------- */
+
+.burgundy {
+  color: #83003f;
+}
+
+.raspberry {
+  color: #b3025b
+}
+
+.quote-main {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.btn-quote {
+  background-color: #83003f;
+  color: #fff;
+  border-color: #83003f;
+  transition: background-color 0.2s ease-out;
+  letter-spacing: 0.02em;
+}
+
+.btn-quote:hover,
+.btn-quote:focus {
+  background-color: #fff;
+  color: #83003f;
+  border-color: #83003f;
 }
