@@ -287,14 +287,22 @@ description: Self-Sufficient Seniors is a healthcare company..... to be continue
 
 
     <div class="unit-form">
-      <form action="https://formspree.io/ksenia.zhelovatyks@gmail.com" method="POST">
+      <form id="contactform" method="POST">
         <label class="milli white push-1-4 text-left" for="last-name">Your Name</label>
         <input class="newsletter-input push-1-2" id="last-name" type="text" name="nickname" value="" placeholder="First and Last Name" required>
 
         <label class="milli white push-1-4 text-left" for="email-subscribe">Your email</label>
         <input class="newsletter-input push" id="email-subscribe" type="email" name="email-subscribe" value="" placeholder="Sign up for our Newsletter" required>
+        <textarea placeholder="Your message"></textarea>
         <div class="pad-t-1-2">
-          <button class="gutter mega btn" type="submit">Submit</button>
+          <button class="gutter mega btn" type="submit" value="send">Submit</button>
         </div>
-        <input type="hidden" name="_subject" value="Question">
+        <input type="hidden" name="_subject" value="Website Contact">
+        <input type="hidden" name="_next" value="{{site.baseurl}}/testimonials.html" />
+        <input type="text" name="_gotcha" style="display:none" />
+      </form>
+      <script>
+        var contactform =  document.getElementById('contactform');
+        contactform.setAttribute('action', '//formspree.io/' + 'ksenia.zhelovatykh' + '@' + 'gmail' + '.' + 'com');
+      </script>
     </div>
