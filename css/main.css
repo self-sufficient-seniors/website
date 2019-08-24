@@ -282,7 +282,8 @@ html {
   text-align: center;
 }
 
-.text-ctr-lft {
+.text-ctr-lft,
+.text-ctr-rght {
   text-align: center;
 }
 
@@ -302,6 +303,10 @@ html {
 
   .text-ctr-lft {
     text-align: left;
+  }
+
+  .text-ctr-rght {
+    text-align: right;
   }
 
 }
