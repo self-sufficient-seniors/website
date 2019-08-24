@@ -592,3 +592,10 @@ html {
   border-radius: 20px;
   margin-right: .5em;
 }
+
+/* ------------------------------------testimonials page---------------------------------------- */
+
+.quote-testimonials {
+  width: 2.4em;
+  height: 2.4em;
+}
