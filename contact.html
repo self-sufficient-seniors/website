@@ -32,62 +32,50 @@ description: Self-Sufficient Seniors is a healthcare company..... to be continue
 
 
 <section id="form" tabindex="0">
-        <div class="gutter">
-          <h2 class="tera lato push-1-2">Adoption Application</h2>
-          <p>Filling out an adoption application does not mean you have to adopt the pet. This is simply the first step in our adoption procedure.</p>
-        </div>
+  <form id="contactform" action="https://formspree.io/ksenia.zhelovatykh@gmail.com" method="POST">
 
-        <form class="gutter wrapper" action="index.html" method="post">
+    <div class="grid">
 
-          <fieldset class="personal-details">
-            <legend class="push-1-2 mega">Personal details</legend>
-            <div class="grid">
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-right push">
+        <label class="kilo push-1-8" for="first-name">First Name</label>
+        <input class="push-1-8" id="first-name" type="text" name="first-name" value="" required>
+      </div>
 
-              <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-right push">
-                <label class="kilo push-1-8" for="first-name">First Name</label>
-                <input class="push-1-8" id="first-name" type="text" name="name" value="" required>
-              </div>
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-left push">
+        <label class="kilo push-1-8" for="last-name">Last Name</label>
+        <input class="push-1-8" id="last-name" type="text" name="last-name" value="" required>
+      </div>
 
-              <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-left push">
-                <label class="kilo push-1-8" for="last-name">Last Name</label>
-                <input class="push-1-8" id="last-name" type="text" name="nickname" value="" required>
-              </div>
+      <div class="push unit unit-xs-1 unit-s-1 unit-m-1-2 space-right">
+        <label class="kilo push-1-8" for="email">Email</label>
+        <input id="email" type="email" name="email" value="" placeholder="your@email.com" required>
+      </div>
 
-              <div class="push unit unit-xs-1 unit-s-1 unit-m-1-2 space-right">
-                <label class="kilo push-1-8" for="email">Email</label>
-                <input id="email" type="email" name="email" value="" required>
-              </div>
+      <div class="push unit unit-xs-1 unit-s-1 unit-m-1-2 space-left">
+        <label class="kilo push-1-8" for="phone">Phone number</label>
+        <input id="phone" type="tel" name="phone" value="">
+      </div>
 
-              <div class="push unit unit-xs-1 unit-s-1 unit-m-1-2 space-left">
-                <label class="kilo push-1-8" for="phone">Phone number</label>
-                <input id="phone" type="tel" name="phone" value="">
-              </div>
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-right push">
+        <label class="push-1-8 " for="message">Your message</label>
+        <textarea class="push-1-8" id="message" name="message" placeholder="Your message" required></textarea>
+        <p class="milli"></p>
+      </div>
+      <div class="pad-t-1-2">
+        <button class="gutter mega btn" type="submit" value="send">Submit</button>
+      </div>
 
-            </div>
-          </fieldset>
+  </form>
 
-              <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-right push">
-                <label class="push-1-8 bold" for="which-pet">Which pet are you interested in?</label>
-                <textarea class="push-1-8" id="which-pet" name="which-pet" required></textarea>
-                <p class="milli not-bold">If we don't have a perfect pet for your needs, we will try to help you connect with another recue or shelter that may have a perfect match for you.</p>
-              </div>
+</section>
 
 
 
-    <div class="unit-form">
-      <form id="contactform" action="//formspree.io/ksenia.zhelovatykh@gmail.com" method="POST">
-        <label class="milli white push-1-4 text-left" for="last-name">Your Name</label>
-        <input class="newsletter-input push-1-2" id="last-name" type="text" name="nickname" value="" placeholder="First and Last Name" required>
-
-        <label class="milli white push-1-4 text-left" for="email">Your email</label>
-        <input class="newsletter-input push" id="email" type="email" name="email" value="" placeholder="your@email.com" required>
-        <textarea placeholder="Your message"></textarea>
-
-        <input type="hidden" name="_subject" value="Website Contact">
-        <input type="hidden" name="_next" value="https://ksnz.ca"/>
-        <input type="text" name="_gotcha" style="display:none"/>
-        <div class="pad-t-1-2">
-          <button class="gutter mega btn" type="submit" value="send">Submit</button>
-        </div>
-      </form>
+    <!-- <input type="hidden" name="_subject" value="Website Contact">
+    <input type="hidden" name="_next" value="https://ksnz.ca"/>
+    <input type="text" name="_gotcha" style="display:none"/>
+    <div class="pad-t-1-2">
+      <button class="gutter mega btn" type="submit" value="send">Submit</button>
     </div>
+  </form>
+</div> -->
