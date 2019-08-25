@@ -629,3 +629,65 @@ textarea {
   border-radius: 5px;
   height: 35px;
 }
+
+/* -----------------------------------banner---------------------------------------- */
+
+
+.banner-inside-pages {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 115%;
+  background-position: -1em 4em;
+  min-height: 170px;
+}
+
+.banner-img-contact {
+  background-image: url("{{site.baseurl}}/images/banner-contact.jpg");
+}
+
+
+@media only screen and (min-width: 25em) {
+
+  .banner-inside-pages {
+    background-position: 0 3em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner-inside-pages {
+    background-position: 0 -1em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 72em) {
+
+  .banner-inside-pages {
+    background-position: 0 -3em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner-inside-pages {
+    background-position: 0 -5em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 99em) {
+
+  .banner-inside-pages {
+    background-position: 0 -6em;
+    background-size: 100%;
+  }
+
+}
