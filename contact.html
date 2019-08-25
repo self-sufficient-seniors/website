@@ -15,62 +15,52 @@ description: Self-Sufficient Seniors is a healthcare company..... to be continue
     </div>
   </div>
 
+  <section id="form" tabindex="0">
+    <div class="gutter pad-b-2">
+      <div class="max-length">
+        <form id="contactform" action="https://formspree.io/ksenia.zhelovatykh@gmail.com" method="POST">
 
-  <section class="card-section pad-t-2 pad-b-2">
-    <div class="wrapper">
-      <div class="gutter">
-        <div class="max-length">
-          <h2 class="push-1-4 tera">Our Services and Programs</h2>
-          <p class="push">All our programs and services are personalized and tailored to the individual needs of our clients.</p>
-        </div>
+          <div class="grid">
+
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 push gutter-rght">
+              <label class="milli push-1-8" for="first-name">First Name<span class="gutter-1-8 raspberry">*</span></label>
+              <input class="push-1-8" id="first-name" type="text" name="first-name" value="" required>
+            </div>
+
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 push gutter-lft">
+              <label class="milli push-1-8" for="last-name">Last Name<span class="gutter-1-8 raspberry">*</span></label>
+              <input class="push-1-8" id="last-name" type="text" name="last-name" value="" required>
+            </div>
+
+            <div class="push unit unit-xs-1 unit-s-1 unit-m-1-2 gutter-rght">
+              <label class="milli push-1-8" for="email">Email<span class="gutter-1-8 raspberry">*</span></label>
+              <input class="push-1-8" id="email" type="email" name="email" value="" required>
+            </div>
+
+            <div class="push unit unit-xs-1 unit-s-1 unit-m-1-2 gutter-lft">
+              <label class="milli push-1-8" for="phone">Phone number</label>
+              <input class="push-1-8" id="phone" type="tel" name="phone" value="">
+            </div>
+
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 push">
+              <label class="push-1-8 milli" for="message">Your message<span class="gutter-1-8 raspberry">*</span></label>
+              <textarea class="push-1-8" id="message" name="message" required></textarea>
+            </div>
+            <input type="hidden" name="_next" value="https://self-sufficient-seniors.github.io/website/testimonials.html"/>
+            <input type="hidden" name="_subject" value="Website contact"/>
+            <div class="text-center">
+              <button class="btn btn-main btn-quote milli caps" type="submit" value="send" aria-label="Click to submit your contact form">Submit your message</button>
+            </div>
+
+        </form>
       </div>
+
     </div>
+
+
   </section>
 
 </main>
-
-
-
-<section id="form" tabindex="0">
-  <form id="contactform" action="https://formspree.io/ksenia.zhelovatykh@gmail.com" method="POST">
-
-    <div class="grid">
-
-      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-right push">
-        <label class="kilo push-1-8" for="first-name">First Name</label>
-        <input class="push-1-8" id="first-name" type="text" name="first-name" value="" required>
-      </div>
-
-      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-left push">
-        <label class="kilo push-1-8" for="last-name">Last Name</label>
-        <input class="push-1-8" id="last-name" type="text" name="last-name" value="" required>
-      </div>
-
-      <div class="push unit unit-xs-1 unit-s-1 unit-m-1-2 space-right">
-        <label class="kilo push-1-8" for="email">Email</label>
-        <input id="email" type="email" name="email" value="" placeholder="your@email.com" required>
-      </div>
-
-      <div class="push unit unit-xs-1 unit-s-1 unit-m-1-2 space-left">
-        <label class="kilo push-1-8" for="phone">Phone number</label>
-        <input id="phone" type="tel" name="phone" value="">
-      </div>
-
-      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 space-right push">
-        <label class="push-1-8 " for="message">Your message</label>
-        <textarea class="push-1-8" id="message" name="message" placeholder="Your message" required></textarea>
-        <p class="milli"></p>
-      </div>
-      <input type="hidden" name="_next" value="https://ksnz.ca"/>
-      <input type="hidden" name="_subject" value="Website contact" />
-      <div class="pad-t-1-2">
-        <button class="gutter mega btn" type="submit" value="send">Submit</button>
-      </div>
-
-  </form>
-
-</section>
-
 
 
     <!-- <input type="hidden" name="_subject" value="Website Contact">

@@ -604,3 +604,28 @@ html {
   width: 2.4em;
   height: 2.4em;
 }
+
+/* -----------------------------------contact page---------------------------------------- */
+
+@media only screen and (min-width:38em) {
+
+  .gutter-lft {
+    padding-left: .7rem;
+  }
+
+  .gutter-rght {
+    padding-right: .7rem;
+  }
+
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  background-color: #f5eff3;
+  border: 1px solid rgb(223, 201, 216);
+  border-radius: 5px;
+  height: 35px;
+}
