@@ -1,12 +1,13 @@
 ---
-layout: default
+layout: default-basic
 title: Contact
 description: Self-Sufficient Seniors is a healthcare company..... to be continued
 ---
 
+{% include masthead-raspberry.html %}
 
 <div class="" role="banner">
-  <div class="banner-inside-pages banner-img-contact">
+  <div class="contact-banner banner-img-contact">
     <!-- <div class="wrapper logo-container relative">
     </div> -->
   </div>
@@ -47,14 +48,14 @@ description: Self-Sufficient Seniors is a healthcare company..... to be continue
               <input class="push-1-8" id="phone" type="tel" name="phone" value="">
             </div>
 
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1 push">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 push-2">
               <label class="push-1-8 milli" for="message">Your message<span class="gutter-1-8 raspberry">*</span></label>
               <textarea class="push-1-8" id="message" name="message" required></textarea>
+              <input type="hidden" name="_next" value="https://self-sufficient-seniors.github.io/website/testimonials.html"/>
+              <input type="hidden" name="_subject" value="Website contact"/>
             </div>
-            <input type="hidden" name="_next" value="https://self-sufficient-seniors.github.io/website/testimonials.html"/>
-            <input type="hidden" name="_subject" value="Website contact"/>
-            <div class="text-center">
-              <button class="btn btn-main btn-quote milli caps" type="submit" value="send" aria-label="Click to submit your contact form">Submit your message</button>
+            <div class="unit xs-1 text-center">
+              <button class="btn btn-main btn-quote milli caps" type="submit" value="send" aria-label="Click to submit your contact form">Submit</button>
             </div>
 
         </form>

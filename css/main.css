@@ -27,7 +27,8 @@ a {
   text-decoration: none;
 }
 
-.btn-nav {
+.btn-nav,
+.btn-nav-dark {
   display: block;
   font-weight: 700;
   color: #650038;
@@ -45,6 +46,14 @@ a {
   color: #b3025b;
   background-color: #f5eff3;
 }
+
+.btn-nav-dark:hover,
+.btn-nav-dark:focus {
+  border-bottom-color: #b3025b;
+  color: #b3025b;
+  background-color: #f5eff3;
+}
+
 
 /* .nav {
   background-color: #00b9b7;
@@ -125,6 +134,10 @@ nav [type="checkbox"] + label::before {
   background-color: #fff;
 }
 
+.dark-nav-header {
+  background-color: #fff;
+}
+
 @media only screen and (min-width: 38em) {
 
   .xs-gutter-m-no {
@@ -153,6 +166,11 @@ nav [type="checkbox"] + label::before {
     background-color: #b3025b;
   }
 
+  .dark-nav-header {
+    background-color: #650038;
+  }
+
+
   .nav-bar {
     width: 95%;
     margin: auto;
@@ -171,6 +189,14 @@ nav [type="checkbox"] + label::before {
     transition: none;
   }
 
+  .btn-nav-dark {
+    font-weight: 600;
+    color: #fff;
+    border-bottom-color: #650038;
+    background-color: #650038;
+    transition: none;
+  }
+
   .btn-nav:hover,
   .btn-nav:focus {
     border-bottom-color: #b3025b;
@@ -178,9 +204,21 @@ nav [type="checkbox"] + label::before {
     background-color: #b3025b;
   }
 
+  .btn-nav-dark:hover,
+  .btn-nav-dark:focus {
+    border-bottom-color: #650038;
+    color: #fff;
+    background-color: #650038;
+  }
+
   .l-nav-border {
     display: inline-block;
     border-bottom: solid 3px #b3025b;
+  }
+
+  .l-dark-nav-border {
+    display: inline-block;
+    border-bottom: solid 3px #650038;
   }
 
   .btn-nav:hover .l-nav-border,
@@ -188,7 +226,16 @@ nav [type="checkbox"] + label::before {
     border-bottom-color: #fff;
   }
 
+  .btn-nav-dark:hover .l-dark-nav-border,
+  .btn-nav-dark:focus .l-dark-nav-border {
+    border-bottom-color: #fff;
+  }
+
   .current .l-nav-border {
+    border-bottom-color: #fff;
+  }
+
+  .current .l-dark-nav-border {
     border-bottom-color: #fff;
   }
 
@@ -238,6 +285,11 @@ html {
 
 .masthead-wrapper {
   background-color: #b3025b;
+  width: 100%;
+}
+
+.dark-masthead-wrapper {
+  background-color: #650038;
   width: 100%;
 }
 
@@ -319,7 +371,7 @@ html {
 
 .btn-main {
   border-radius: 25px;
-  padding: .35em 1.1em .3em 1.1em;
+  padding: .35em 1.3em .3em 1.3em;
   font-weight: 700;
   border-width: 2px;
 }
@@ -630,15 +682,105 @@ textarea {
   height: 35px;
 }
 
-/* -----------------------------------banner---------------------------------------- */
+/* -----------------------------------banners---------------------------------------- */
 
+/* -----------------------------------about-us banner---------------------------------------- */
 
-.banner-inside-pages {
+.about-us-banner {
   background-color: #650038;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 115%;
-  background-position: -1em 4em;
+  background-attachment: scroll;
+  background-size: 125%;
+  background-position: -3em -1em;
+  min-height: 170px;
+}
+
+.banner-img-about-us {
+  background-image: url("{{site.baseurl}}/images/banner-about.jpg");
+}
+
+
+@media only screen and (min-width: 25em) {
+
+  .about-us-banner {
+    background-position: 0 -1.5em;
+    background-size: 105%;
+  }
+
+}
+
+@media only screen and (min-width: 40em) {
+
+  .about-us-banner {
+
+    background-size: 100%;
+    background-position: 0 -2em;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  .about-us-banner {
+    background-position: 0 -3.5em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 58em) {
+
+  .about-us-banner {
+    background-position: 0 -4.5em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .about-us-banner {
+    background-position: 0 -6em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 76em) {
+
+  .about-us-banner {
+    background-position: 0 -7em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 81em) {
+
+  .about-us-banner {
+    background-position: 0 -8em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 93em) {
+
+  .about-us-banner {
+    background-position: 0 -9em;
+    background-size: 100%;
+  }
+
+}
+
+/* -----------------------------------contact us banner---------------------------------------- */
+
+.contact-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 125%;
+  background-position: -2em -1em;
   min-height: 170px;
 }
 
@@ -649,17 +791,64 @@ textarea {
 
 @media only screen and (min-width: 25em) {
 
-  .banner-inside-pages {
-    background-position: 0 3em;
+  .contact-banner {
+    background-position: 0 -1.5em;
+    background-size: 105%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .contact-banner {
+    background-position: 0 -1.5em;
     background-size: 100%;
   }
 
 }
 
-@media only screen and (min-width: 60em) {
 
-  .banner-inside-pages {
-    background-position: 0 -1em;
+@media only screen and (min-width: 40em) {
+
+  .contact-banner {
+    background-position: 0 -2em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 44em) {
+
+  .contact-banner {
+    background-position: 0 -3em;
+    background-size: 100%;
+  }
+
+}
+
+
+@media only screen and (min-width: 49.3em) {
+
+  .contact-banner {
+    background-position: 0 -6em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 55.7em) {
+
+  .contact-banner {
+    background-position: 0 -8em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 64.8em) {
+
+  .contact-banner {
+    background-position: 0 -8em;
     background-size: 100%;
   }
 
@@ -667,8 +856,8 @@ textarea {
 
 @media only screen and (min-width: 72em) {
 
-  .banner-inside-pages {
-    background-position: 0 -3em;
+  .contact-banner {
+    background-position: 0 -11em;
     background-size: 100%;
   }
 
@@ -676,18 +865,43 @@ textarea {
 
 @media only screen and (min-width: 90em) {
 
-  .banner-inside-pages {
-    background-position: 0 -5em;
+  .contact-banner {
+    background-position: 0 -13em;
     background-size: 100%;
   }
 
 }
 
-@media only screen and (min-width: 99em) {
+@media only screen and (min-width: 100em) {
 
-  .banner-inside-pages {
-    background-position: 0 -6em;
+  .contact-banner {
+    background-position: 0 -15em;
     background-size: 100%;
+  }
+
+}
+
+/* -----------------------------------testimonials banner---------------------------------------- */
+
+.testimonials-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 125%;
+  background-position: -2em -1em;
+  min-height: 170px;
+}
+
+.banner-img-testimonials {
+  background-image: url("{{site.baseurl}}/images/banner-testimonials.jpg");
+}
+
+
+@media only screen and (min-width: 25em) {
+
+  .testimonials-banner {
+    background-position: 0 -1.5em;
+    background-size: 105%;
   }
 
 }
