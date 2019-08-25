@@ -33,56 +33,7 @@
     <li><a href="#nav">Jump to navigation</a></li>
   </ul>
 
-  <header class="masthead-wrapper">
-
-    <div class="grid grid-middle masthead">
-      <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-2">
-        <div class="pad-t-1-2 pad-b-1-2">
-          <div class="gutter">
-            <a class="nav-logo" aria-label="Click to go to home page" href="{{site.baseurl}}/">
-              <i class="icon header-logo">
-                <img class="img-flex" src="{{site.baseurl}}/images/icon-logo.svg" alt="Logo of Self-Sufficient seniors inc.">
-              </i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="unit xs-1 s-1 m-1 l-2-3 xl-1-2">
-        <nav>
-          <input type="checkbox" class="nav-check" id="nav-check">
-          <label class="nav-label" for="nav-check">
-            <img class="nav-open img-flex" src="{{site.baseurl}}/images/icon-menu.svg" alt="open navigation">
-            <img class="nav-close img-flex" src="{{site.baseurl}}/images/icon-x-menu.svg" alt="close navigation">
-          </label>
-          <div class="nav-header nav" role="navigation" id="nav" tabindex="0">
-            <ul class="grid list-group nav-list milli nav-text">
-              <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/index.html" aria-label="Click to go to home page" class="{% if page.url == '/' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">Home</span></a></li>
-              <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/services/index.html" aria-label="Click to go to services page" class="{% if page.url contains '/services/' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">Services</span></a></li>
-              <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/about-us.html" aria-label="Click to go to about us page" class="{% if page.url contains '/about-us' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">About us</span></a></li>
-              <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/contact.html" aria-label="Click to go to contact page" class="{% if page.url contains '/contact' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">Contact</span></a></li>
-              <li class="unit xs-1 s-1 m-1-5 l-1-5"><a href="{{site.baseurl}}/testimonials.html" aria-label="Click to go to testimonials page" class="{% if page.url contains '/testimonials' %}current{% endif %} btn-nav pad-t-1-2 pad-b-1-2 xs-gutter-m-no"><span class="l-nav-border">Testimonials</span></a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-
-  </header>
-
   {{content}}
-
-  <section>
-    <div class="footercontact-bar gutter">
-      <div class="grid grid-middle max-length pad-t-2 pad-b">
-        <div class="unit xs-1 s-1 m-2-3 l-2-3 text-ctr-lft">
-          <h2 class="push giga fw-600 white">Learn how we can help you!</h2>
-        </div>
-        <div class="unit xs-1 s-1 m-1-3 l-1-3 text-ctr-rght">
-          <a class="btn btn-main btn-white milli caps push" href="{{site.baseurl}}/contact.html" aria-label="Click to go to contact page to fill in the form or get our contact information">Contact us</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <footer role="contentinfo" tabindex="0" class="footer pad-t-2 gutter pad-b-1-2">
     <div class="grid grid-top">
