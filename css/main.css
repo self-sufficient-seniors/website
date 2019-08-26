@@ -619,6 +619,41 @@ html {
   background-color: rgba(131, 0, 63, .7);
 }
 
+
+@media only screen and (min-width: 25em) {
+
+  .banner-overtop {
+    width: 15em;
+    margin-left: 2em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .banner-overtop {
+    width: 19em;
+  }
+
+}
+
+@media only screen and (min-width: 46.5em) {
+
+  .banner-overtop {
+    margin-left: 4em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner-overtop {
+    width: 19.25em;
+    margin-left: 6.5em;
+  }
+
+}
+
 .btn-banner {
   background-color: #fff;
   color: #b3025b;
@@ -887,8 +922,8 @@ textarea {
   background-color: #650038;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: 125%;
-  background-position: -2em -1em;
+  background-size: 110%;
+  background-position: -1em 0;
   min-height: 170px;
 }
 
@@ -897,11 +932,599 @@ textarea {
 }
 
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 22em) {
 
   .testimonials-banner {
-    background-position: 0 -1.5em;
+    background-size: 110%;
+    background-position: -1em -1em;
+  }
+
+}
+
+@media only screen and (min-width: 26em) {
+
+  .testimonials-banner {
+    background-size: 110%;
+    background-position: -1em -2em;
+  }
+
+}
+
+@media only screen and (min-width: 29em) {
+
+  .testimonials-banner {
+    background-size: 100%;
+    background-position: 0 -2em;
+  }
+
+}
+
+@media only screen and (min-width: 34em) {
+
+  .testimonials-banner {
+    background-size: 100%;
+    background-position: 0 -3em;
+  }
+
+}
+
+@media only screen and (min-width: 39em) {
+
+  .testimonials-banner {
+    background-size: 100%;
+    background-position: 0 -4em;
+  }
+
+}
+
+@media only screen and (min-width: 42.5em) {
+
+  .testimonials-banner {
     background-size: 105%;
+    background-position: 0 -7em;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  .testimonials-banner {
+    background-size: 110%;
+    background-position: 0 -9em;
+  }
+
+}
+
+@media only screen and (min-width: 53.5em) {
+
+  .testimonials-banner {
+    background-size: 100%;
+    background-position: 0 -9em;
+  }
+
+}
+
+@media only screen and (min-width: 61.3em) {
+
+  .testimonials-banner {
+    background-size: 105%;
+    background-position: 0 -10em;
+  }
+
+}
+
+@media only screen and (min-width: 63.6em) {
+
+  .testimonials-banner {
+    background-size: 115%;
+    background-position: -3em -9.5em;
+  }
+
+}
+
+@media only screen and (min-width: 73.7em) {
+
+  .testimonials-banner {
+    background-size: 120%;
+    background-position: -5em -11em;
+  }
+
+}
+
+@media only screen and (min-width: 76.7em) {
+
+  .testimonials-banner {
+    background-size: 118%;
+    background-position: -5em -12.7em;
+  }
+
+}
+
+@media only screen and (min-width: 83em) {
+
+  .testimonials-banner {
+    background-size: 110%;
+    background-position: -5em -13.5em;
+  }
+
+}
+
+@media only screen and (min-width: 100em) {
+
+  .testimonials-banner {
+    background-size: 100%;
+    background-position: 0 -13.5em;
+  }
+
+}
+
+/* -----------------------------------services banner---------------------------------------- */
+
+.services-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 110%;
+  background-position: -1em 0;
+  min-height: 170px;
+}
+
+.banner-img-services {
+  background-image: url("{{site.baseurl}}/images/banner-services.jpg");
+}
+
+@media only screen and (min-width: 25em) {
+
+  .services-banner {
+    background-position: 0 0;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 32em) {
+
+  .services-banner {
+    background-position: 0 -2em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 48.5em) {
+
+  .services-banner {
+    background-position: 0 -4em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .services-banner {
+    background-position: 0 -6em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 71em) {
+
+  .services-banner {
+    background-position: 0 -8em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .services-banner {
+    background-position: 0 -11em;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 105em) {
+
+  .services-banner {
+    background-position: 0 -13em;
+    background-size: 100%;
+  }
+
+}
+
+/* -----------------------------------services-cognitive banner---------------------------------------- */
+
+.services-cognitive-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 120%;
+  background-position: -2em -3em;
+  min-height: 170px;
+}
+
+.banner-img-services-cognitive {
+  background-image: url("{{site.baseurl}}/images/banner-services-cognitive.jpg");
+}
+
+@media only screen and (min-width: 26.7em) {
+
+  .services-cognitive-banner {
+    background-size: 105%;
+    background-position: -1em -3em;
+  }
+
+}
+
+@media only screen and (min-width: 30.6em) {
+
+  .services-cognitive-banner {
+    background-size: 105%;
+    background-position: -1em -5em;
+  }
+
+}
+
+@media only screen and (min-width: 35.4em) {
+
+  .services-cognitive-banner {
+    background-size: 100%;
+    background-position: 0 -5em;
+  }
+
+}
+
+@media only screen and (min-width: 37.7em) {
+
+  .services-cognitive-banner {
+    background-size: 100%;
+    background-position: 0 -6em;
+  }
+
+}
+
+@media only screen and (min-width: 41.8em) {
+
+  .services-cognitive-banner {
+    background-size: 100%;
+    background-position: 0 -7em;
+  }
+
+}
+
+@media only screen and (min-width: 58em) {
+
+  .services-cognitive-banner {
+    background-size: 110%;
+    background-position: -2em -9em;
+  }
+
+}
+
+@media only screen and (min-width: 69.8em) {
+
+  .services-cognitive-banner {
+    background-size: 110%;
+    background-position: -2em -11em;
+  }
+
+}
+
+@media only screen and (min-width: 77em) {
+
+  .services-cognitive-banner {
+    background-size: 100%;
+    background-position: 0 -12em;
+  }
+
+}
+
+@media only screen and (min-width: 95em) {
+
+  .services-cognitive-banner {
+    background-size: 100%;
+    background-position: 0 -13em;
+  }
+
+}
+
+@media only screen and (min-width: 100em) {
+
+  .services-cognitive-banner {
+    background-size: 100%;
+    background-position: 0 -14.5em;
+  }
+
+}
+
+
+/* -----------------------------------services-physical banner---------------------------------------- */
+
+.services-physical-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 160%;
+  background-position: -5em 0;
+  min-height: 170px;
+}
+
+.banner-img-services-physical {
+  background-image: url("{{site.baseurl}}/images/banner-services-physical.jpg");
+}
+
+@media only screen and (min-width: 25em) {
+
+  .services-physical-banner {
+    background-size: 140%;
+    background-position: -6em -1.2em;
+  }
+
+}
+
+@media only screen and (min-width: 31.8em) {
+
+  .services-physical-banner {
+    background-size: 110%;
+    background-position: -1em -1.2em;
+  }
+
+}
+
+@media only screen and (min-width: 40.7em) {
+
+  .services-physical-banner {
+    background-size: 100%;
+    background-position: 0 -3.3em;
+  }
+
+}
+
+@media only screen and (min-width: 54.3em) {
+
+  .services-physical-banner {
+    background-size: 100%;
+    background-position: 0 -7.5em;
+  }
+
+}
+
+@media only screen and (min-width: 77.8em) {
+
+  .services-physical-banner {
+    background-size: 100%;
+    background-position: 0 -9em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .services-physical-banner {
+    background-size: 100%;
+    background-position: 0 -11em;
+  }
+
+}
+
+/* -----------------------------------services-environmental banner---------------------------------------- */
+
+.services-safety-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 105%;
+  background-position: 0 -.6em;
+  min-height: 170px;
+}
+
+.banner-img-services-safety {
+  background-image: url("{{site.baseurl}}/images/banner-services-safety.jpg");
+}
+
+@media only screen and (min-width: 28em) {
+
+  .services-safety-banner {
+    background-size: 100%;
+    background-position: 0 -2em;
+  }
+
+}
+
+@media only screen and (min-width: 41.8em) {
+
+  .services-safety-banner {
+    background-size: 100%;
+    background-position: 0 -3.5em;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  .services-safety-banner {
+    background-size: 100%;
+    background-position: 0 -4.5em;
+  }
+
+}
+
+@media only screen and (min-width: 69em) {
+
+  .services-safety-banner {
+    background-size: 100%;
+    background-position: 0 -6em;
+  }
+
+}
+
+@media only screen and (min-width: 83.7em) {
+
+  .services-safety-banner {
+    background-size: 100%;
+    background-position: 0 -8em;
+  }
+
+}
+
+@media only screen and (min-width: 100em) {
+
+  .services-safety-banner {
+    background-size: 100%;
+    background-position: 0 -9em;
+  }
+
+}
+
+/* -----------------------------------services-medical banner---------------------------------------- */
+
+.services-medical-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 159%;
+  background-position: -8em 0;
+  min-height: 170px;
+}
+
+.banner-img-services-medical {
+  background-image: url("{{site.baseurl}}/images/banner-services-medical.jpg");
+}
+
+@media only screen and (min-width: 25em) {
+
+  .services-medical-banner {
+    background-size: 127%;
+    background-position: -5em 0;
+  }
+
+}
+
+@media only screen and (min-width: 32.8em) {
+
+  .services-medical-banner {
+    background-size: 115%;
+    background-position: -4em 0;
+  }
+
+}
+
+@media only screen and (min-width: 48em) {
+
+  .services-medical-banner {
+    background-size: 115%;
+    background-position: -6em 0;
+  }
+
+}
+
+@media only screen and (min-width: 55.8em) {
+
+  .services-medical-banner {
+    background-size: 110%;
+    background-position: -5em 0;
+  }
+
+}
+
+@media only screen and (min-width: 69.8em) {
+
+  .services-medical-banner {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+
+}
+
+
+/* -----------------------------------services-medical banner---------------------------------------- */
+
+.home-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 165%;
+  background-position: -8em -.8em;
+  min-height: 230px;
+}
+
+.banner-img-home {
+  background-image: url("{{site.baseurl}}/images/banner-about.jpg");
+}
+
+@media only screen and (min-width: 24em) {
+
+  .home-banner {
+    background-size: 145%;
+    background-position: -6em -1em;
+  }
+
+}
+
+@media only screen and (min-width: 30em) {
+
+  .home-banner {
+    background-size: 130%;
+    background-position: -3em -2.5em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .home-banner {
+    background-size: 125%;
+    background-position: -1.5em -2em;
+  }
+
+}
+
+@media only screen and (min-width: 46.5em) {
+
+  .home-banner {
+    background-size: 115%;
+    background-position: -.5em -4em;
+  }
+
+}
+
+@media only screen and (min-width: 57em) {
+
+  .home-banner {
+    background-size: 110%;
+    background-position: 0 -4em;
+  }
+
+}
+
+@media only screen and (min-width: 66em) {
+
+  .home-banner {
+    background-size: 105%;
+    background-position: 0 -6em;
+  }
+
+}
+
+
+@media only screen and (min-width: 84.6em) {
+
+  .home-banner {
+    background-size: 100%;
+    background-position: 0 -7em;
+  }
+
+}
+
+@media only screen and (min-width: 95em) {
+
+  .home-banner {
+    background-size: 100%;
+    background-position: 0 -9em;
   }
 
 }
