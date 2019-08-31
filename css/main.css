@@ -1621,3 +1621,7 @@ textarea {
   }
 
 }
+
+strong {
+  font-weight: normal;
+}
