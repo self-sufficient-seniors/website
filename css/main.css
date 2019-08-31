@@ -1601,3 +1601,23 @@ textarea {
   }
 
 }
+
+/* -----------------------------------about page---------------------------------------- */
+
+.gutter-m-right,
+.gutter-m-left {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width:38em) {
+
+  .gutter-m-right {
+    padding-right: .7rem;
+  }
+
+  .gutter-m-left {
+    padding-left: .7rem;
+  }
+
+}
