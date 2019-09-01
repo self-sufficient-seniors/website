@@ -1,0 +1,3 @@
+Sitemap: https://self-sufficient-seniors.github.io/website/sitemap.xml
+
+User-Agent: *
