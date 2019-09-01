@@ -767,7 +767,7 @@ html {
 .btn-banner:focus {
   background-color: inherit;
   color: #fff;
-  border-color: inherit;
+  border-color: #fff;
 }
 
 /* ------------------------------------Services pages---------------------------------------- */
