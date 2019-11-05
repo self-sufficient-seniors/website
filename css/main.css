@@ -82,7 +82,7 @@ nav [type="checkbox"] + label::before {
   width: 40px;
   position: absolute;
   right: 1.3rem;
-  top: 2rem;
+  top: 2.3rem;
   transform: translateY(-50%);
 }
 
@@ -270,15 +270,15 @@ html {
 }
 
 .header-logo {
-  width: 172px;
-  height: 42px;
+  width: 190px;
+  height: 46px;
 }
 
 @media only screen and (min-width: 38em) {
 
   .header-logo {
-    width: 202px;
-    height: 49px;
+    width: 222px;
+    height: 54px;
   }
 
 }
