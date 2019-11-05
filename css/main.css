@@ -5,9 +5,15 @@ h4,
 h5 {
   color: #83003f;
 }
+
 .tight {
   line-height: 1.25;
 }
+
+.dark {
+  color: #650038;
+}
+
 
 /* ------------------------------------ old navigation---------------------------------------- */
 
@@ -689,7 +695,7 @@ html {
 /* ------------------------------------Banner---------------------------------------- */
 
 .banner-overtop {
-  background-color: rgba(131, 0, 63, .7);
+  background-color: rgba(223, 201, 216, .9);
 }
 
 
@@ -767,6 +773,21 @@ html {
   background-color: inherit;
   color: #fff;
   border-color: #fff;
+}
+
+.btn-home-banner {
+  background-color: #fff;
+  color: #83003f;
+  border-color: #fff;
+  transition: border-color 0.2s ease-out;
+  letter-spacing: 0.02em;
+}
+
+.btn-home-banner:hover,
+.btn-home-banner:focus {
+  background-color: rgba(255, 255, 255, .35);
+  color: #83003f;
+  border-color: #83003f;
 }
 
 /* ------------------------------------Services pages---------------------------------------- */
