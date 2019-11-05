@@ -698,12 +698,28 @@ html {
   background-color: rgba(223, 201, 216, .9);
 }
 
+.overtop-m {
+  display: none;
+}
+
+.overtop-xs {
+  display: inline-block;
+  width: 100%;
+}
 
 @media only screen and (min-width: 25em) {
 
   .banner-overtop {
     width: 15em;
     margin-left: 2em;
+  }
+
+  .overtop-m {
+    display: inline-block;
+  }
+
+  .overtop-xs {
+    display: none;
   }
 
 }
@@ -1564,27 +1580,50 @@ textarea {
 
 /* -----------------------------------services-medical banner---------------------------------------- */
 
-.home-banner {
+/* .home-banner {
   background-color: #650038;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 165%;
   background-position: -8em -.8em;
   min-height: 230px;
+} */
+
+.home-banner {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 160%;
+  background-position: 0 5.5em;
+  min-height: 230px;
+}
+
+.home-banner-xs {
+  background-color: #650038;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  background-position: 0 -1.75em;
+  min-height: 90px;
 }
 
 .banner-img-home {
   background-image: url("{{site.baseurl}}/images/banner-about.jpg");
 }
 
-@media only screen and (min-width: 24em) {
+@media only screen and (min-width: 25em) {
 
   .home-banner {
     background-size: 145%;
-    background-position: -6em -1em;
+    background-position: -3.5em -1em;
+  }
+
+  .home-banner-xs {
+    display: none;
   }
 
 }
+
 
 @media only screen and (min-width: 30em) {
 
